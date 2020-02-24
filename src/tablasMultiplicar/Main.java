@@ -1,3 +1,10 @@
+//Ejercicio 1:
+
+//Calculo de tablas de multiplicar en paralelo. Crear una aplicación java que cree 3 hilos para calcular y visualizar de forma paralela 3 tablas de multiplicar.
+//Al crear los hilos les pasamos los valores o los podéis pedir previamente por el teclado.
+//Podéis jugar también con las prioridades para ver como se comportan los diferentes hilos.
+
+
 package tablasMultiplicar;
 
 import pideDatos.PideDatos;
@@ -7,13 +14,13 @@ public class Main {
 	public static void main(String[] args) {
 		int num1, num2, num3;
 
-		System.out.println("A continuación se le pedirán 3 numeros enteros para calcular sus respectivas tablas de multiplicar:\n");
+		System.out.println("Introduzca 3 número para el cálculo de sus tablas de multiplicar:\n");
 
-		num1 = PideDatos.pideEntero("Valor del 1er número:\n");
+		num1 = PideDatos.pideEntero("1er número:\n");
 
-		num2 = PideDatos.pideEntero("Valor del 2do número:\n");
+		num2 = PideDatos.pideEntero("2do número:\n");
 
-		num3 = PideDatos.pideEntero("Valor del 3er número:\n");
+		num3 = PideDatos.pideEntero("3er número:\n");
 
 		TablasMultiplicar tm1 = new TablasMultiplicar(num1);
 
